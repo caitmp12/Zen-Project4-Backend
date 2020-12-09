@@ -15,3 +15,37 @@ Migrating to CreatePosts (20201208015803)
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7106877902882796990)[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "blurb", "genre", "username", "contact", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Circe"], ["blurb", "Greek myth retelling of world's first witch"], ["genre", "Historical Fantasy"], ["username", "AthenaWarriorPrincess"], ["contact", "@athena_warrior"], ["created_at", "2020-12-09 01:42:46.808971"], ["updated_at", "2020-12-09 01:42:46.808971"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "blurb", "genre", "username", "contact", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Apron Anxiety"], ["blurb", "The true story of a messy life, in and out of the kitchen"], ["genre", "Memoir"], ["username", "CookingWithWords"], ["contact", "apron_on@gmail.com"], ["created_at", "2020-12-09 01:42:46.814676"], ["updated_at", "2020-12-09 01:42:46.814676"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "blurb", "genre", "username", "contact", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Mexican Gothic"], ["blurb", "Dark tale about white people doing messed up shit in Mexico in the 20th century"], ["genre", "Horror"], ["username", "writer4865"], ["contact", "silviaMG@gmail.com"], ["created_at", "2020-12-09 01:42:46.817730"], ["updated_at", "2020-12-09 01:42:46.817730"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "blurb", "genre", "username", "contact", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Beach Read"], ["blurb", "He writes boring but important literature; she writes warm and fuzzies only. They want to hate each other, but instead fall in love."], ["genre", "Romance"], ["username", "HappyEndingsOnly"], ["contact", "@happily_eva_afta"], ["created_at", "2020-12-09 01:42:46.820779"], ["updated_at", "2020-12-09 01:42:46.820779"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "blurb", "genre", "username", "contact", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Daisy Jones and the Six"], ["blurb", "Drugs, love, and rocknroll."], ["genre", "Fiction"], ["username", "StevieFan1810"], ["contact", "@sunshine_kid"], ["created_at", "2020-12-09 01:42:46.823836"], ["updated_at", "2020-12-09 01:42:46.823836"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "blurb", "genre", "username", "contact", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "An Ember in the Ashes"], ["blurb", "He's a soldier looking to get out. She's a terrified rebel trying to break in."], ["genre", "YA Fantasy"], ["username", "JinnCatcher"], ["contact", "sabaa@sabaatahir.com"], ["created_at", "2020-12-09 01:42:46.826866"], ["updated_at", "2020-12-09 01:42:46.826866"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-12-08 20:43:04 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/caitlinmoore-penaskovic/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/caitlinmoore-penaskovic/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.3ms | Allocations: 488)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 2686)
+
+
+Started GET "/posts" for ::1 at 2020-12-08 20:43:15 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 9.7ms | ActiveRecord: 8.1ms | Allocations: 7920)
+
+
