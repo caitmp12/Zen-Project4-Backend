@@ -3445,3 +3445,183 @@ Processing by PostsController#index as */*
 Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.8ms | Allocations: 1505)
 
 
+Started GET "/posts" for ::1 at 2020-12-12 11:28:07 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 8.2ms | ActiveRecord: 12.7ms | Allocations: 7586)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:30:35 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 1.4ms | Allocations: 1506)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:31:06 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 1505)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:43:10 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 2.4ms | Allocations: 1556)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:45:51 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 1.2ms | Allocations: 1487)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:45:51 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 105ms (Views: 102.0ms | ActiveRecord: 1.2ms | Allocations: 1487)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:45:57 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 1.0ms | Allocations: 1487)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:46:01 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.6ms | Allocations: 1487)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:47:36 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 152ms (Views: 150.0ms | ActiveRecord: 1.5ms | Allocations: 1508)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:48:00 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 1487)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:49:50 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 13.6ms | ActiveRecord: 2.2ms | Allocations: 1487)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:51:32 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1487)
+
+
+Started POST "/posts" for ::1 at 2020-12-12 11:51:42 -0500
+Processing by PostsController#create as */*
+  Parameters: {"0"=>{"id"=>1, "title"=>"Circe", "blurb"=>"Greek myth retelling of world's first witch", "genre"=>"Historical Fantasy", "username"=>"AthenaWarriorPrincess", "contact"=>"@athena_warrior", "created_at"=>"2020-12-09T01:42:46.808Z", "updated_at"=>"2020-12-09T01:42:46.808Z"}, "1"=>{"id"=>3, "title"=>"Mexican Gothic", "blurb"=>"Dark tale about white people doing messed up shit in Mexico in the 20th century", "genre"=>"Horror", "username"=>"writer4865", "contact"=>"silviaMG@gmail.com", "created_at"=>"2020-12-09T01:42:46.817Z", "updated_at"=>"2020-12-09T01:42:46.817Z"}, "2"=>{"id"=>6, "title"=>"An Ember in the Ashes", "blurb"=>"He's a soldier looking to get out. She's a terrified rebel trying to break in.", "genre"=>"YA Fantasy", "username"=>"JinnCatcher", "contact"=>"sabaa@sabaatahir.com", "created_at"=>"2020-12-09T01:42:46.826Z", "updated_at"=>"2020-12-09T01:42:46.826Z"}, "3"=>{"id"=>7, "title"=>"Ninth House", "blurb"=>"There are eight secret societies at Yale, all practicers of the occult. The ninth is meant to keep them in line, but that's easier said than done.", "genre"=>"Contemporary Fantasy", "username"=>"LeighWrites", "contact"=>"leigh.writes@gmail.com", "created_at"=>"2020-12-11T00:33:50.008Z", "updated_at"=>"2020-12-11T00:34:28.886Z"}, "title"=>"s", "genre"=>"s", "blurb"=>"s", "username"=>"s", "contact"=>"s", "post"=>{"title"=>"s", "blurb"=>"s", "genre"=>"s", "username"=>"s", "contact"=>"s"}}
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[36mPost Create (71.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "blurb", "genre", "username", "contact", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "s"], ["blurb", "s"], ["genre", "s"], ["username", "s"], ["contact", "s"], ["created_at", "2020-12-12 16:51:42.381079"], ["updated_at", "2020-12-12 16:51:42.381079"]]
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+Completed 201 Created in 112ms (Views: 5.7ms | ActiveRecord: 76.7ms | Allocations: 2970)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:51:42 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.1ms | Allocations: 1648)
+
+
+Started POST "/posts" for ::1 at 2020-12-12 11:53:44 -0500
+Processing by PostsController#create as */*
+  Parameters: {"0"=>{"id"=>1, "title"=>"Circe", "blurb"=>"Greek myth retelling of world's first witch", "genre"=>"Historical Fantasy", "username"=>"AthenaWarriorPrincess", "contact"=>"@athena_warrior", "created_at"=>"2020-12-09T01:42:46.808Z", "updated_at"=>"2020-12-09T01:42:46.808Z"}, "1"=>{"id"=>3, "title"=>"Mexican Gothic", "blurb"=>"Dark tale about white people doing messed up shit in Mexico in the 20th century", "genre"=>"Horror", "username"=>"writer4865", "contact"=>"silviaMG@gmail.com", "created_at"=>"2020-12-09T01:42:46.817Z", "updated_at"=>"2020-12-09T01:42:46.817Z"}, "2"=>{"id"=>6, "title"=>"An Ember in the Ashes", "blurb"=>"He's a soldier looking to get out. She's a terrified rebel trying to break in.", "genre"=>"YA Fantasy", "username"=>"JinnCatcher", "contact"=>"sabaa@sabaatahir.com", "created_at"=>"2020-12-09T01:42:46.826Z", "updated_at"=>"2020-12-09T01:42:46.826Z"}, "3"=>{"id"=>7, "title"=>"Ninth House", "blurb"=>"There are eight secret societies at Yale, all practicers of the occult. The ninth is meant to keep them in line, but that's easier said than done.", "genre"=>"Contemporary Fantasy", "username"=>"LeighWrites", "contact"=>"leigh.writes@gmail.com", "created_at"=>"2020-12-11T00:33:50.008Z", "updated_at"=>"2020-12-11T00:34:28.886Z"}, "4"=>{"id"=>9, "title"=>"s", "blurb"=>"s", "genre"=>"s", "username"=>"s", "contact"=>"s", "created_at"=>"2020-12-12T16:51:42.381Z", "updated_at"=>"2020-12-12T16:51:42.381Z"}, "title"=>"sdf", "genre"=>"sdf", "blurb"=>"sdf", "username"=>"sdf", "contact"=>"sdf", "post"=>{"title"=>"sdf", "blurb"=>"sdf", "genre"=>"sdf", "username"=>"sdf", "contact"=>"sdf"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[36mPost Create (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "blurb", "genre", "username", "contact", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "sdf"], ["blurb", "sdf"], ["genre", "sdf"], ["username", "sdf"], ["contact", "sdf"], ["created_at", "2020-12-12 16:53:44.317633"], ["updated_at", "2020-12-12 16:53:44.317633"]]
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+Completed 201 Created in 7ms (Views: 0.6ms | ActiveRecord: 1.8ms | Allocations: 2715)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:53:44 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 1809)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 11:59:40 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 1.0ms | Allocations: 1867)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 12:00:48 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.9ms | Allocations: 1809)
+
+
+Started DELETE "/posts/9" for ::1 at 2020-12-12 12:00:53 -0500
+Processing by PostsController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:44:in `set_post'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:38:in `destroy'
+  [1m[36mPost Destroy (1.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/posts_controller.rb:38:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:38:in `destroy'
+Completed 204 No Content in 78ms (ActiveRecord: 4.8ms | Allocations: 3992)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 12:00:53 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms | Allocations: 1648)
+
+
+Started PUT "/posts/10" for ::1 at 2020-12-12 12:02:37 -0500
+Processing by PostsController#update as */*
+  Parameters: {"id"=>"10", "title"=>"Apron Anxiety", "blurb"=>"stories of a messy life in and out of the kitchen", "genre"=>"Memoir", "username"=>"Apron78", "contact"=>"@apronanxiety", "created_at"=>"2020-12-12T16:53:44.317Z", "updated_at"=>"2020-12-12T16:53:44.317Z", "post"=>{"id"=>"10", "title"=>"Apron Anxiety", "blurb"=>"stories of a messy life in and out of the kitchen", "genre"=>"Memoir", "username"=>"Apron78", "contact"=>"@apronanxiety", "created_at"=>"2020-12-12T16:53:44.317Z", "updated_at"=>"2020-12-12T16:53:44.317Z"}}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:44:in `set_post'
+[31mUnpermitted parameters: :id, :created_at, :updated_at[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:29:in `update'
+  [1m[36mPost Update (2.0ms)[0m  [1m[33mUPDATE "posts" SET "title" = $1, "blurb" = $2, "genre" = $3, "username" = $4, "contact" = $5, "updated_at" = $6 WHERE "posts"."id" = $7[0m  [["title", "Apron Anxiety"], ["blurb", "stories of a messy life in and out of the kitchen"], ["genre", "Memoir"], ["username", "Apron78"], ["contact", "@apronanxiety"], ["updated_at", "2020-12-12 17:02:37.343832"], ["id", 10]]
+  ↳ app/controllers/posts_controller.rb:29:in `update'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:29:in `update'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 3.7ms | Allocations: 3340)
+
+
+Started GET "/posts" for ::1 at 2020-12-12 12:02:37 -0500
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 1650)
+
+
